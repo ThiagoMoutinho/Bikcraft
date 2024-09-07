@@ -1,91 +1,41 @@
-body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
+@import './global/global.css';
+@import './utility/tipografia.css';
+@import './utility/cores.css';
+@import './global/header.css';
+@import './global/footer.css';
 
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
+/*Utilidades*/
+@import './utility/components.css';
+@import './utility/formulario.css';
 
-a {
-	text-decoration: none;
-}
+/*Home*/
+@import './home/introducao.css';
+@import './home/tecnologia.css';
+@import './home/parceiros.css';
+@import './home/depoimento.css';
 
-.header-bg {
-	background-color: #000000;
-}
+/*Bicicleta*/
+@import './bicicletas/bicicletas-lista.css';
+@import './bicicletas/bicicletas.css';
 
-.header {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: space-between;
-	box-sizing: border-box; /*Faz com que o não funcione no container*/
-	align-items: center;
-	padding: 1.25rem;
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
+/*Bicicletas*/
+@import './bicicleta/bicicleta.css';
+@import './bicicleta/seguro.css';
 
-.header-menu {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px;
-}
+/*Seguros*/
+@import './seguros/seguros.css';
+@import './seguros/perguntas.css';
+@import './seguros/vantagens.css';
 
-.header-menu li a {
-	position: relative;
-	color: #ffffff;
-	display: inline-block;
-	padding: 16px 0;
-	font-size: 18px;
-}
+/*Contato*/
+@import './contact/contato.css';
+@import './contact/lojas.css';
 
-.header-menu li a:after {
-	content: "";
-	display: block;
-	margin-top: 4px;
-	width: 0;
-	border-bottom: #ffffff 2px solid;
-	position: absolute;
-	transition: 0.3s;
-}
+/*Orcamento*/
+@import './orcamento/orcamento.css';
 
-.header-menu li a:hover:after {
-	width: 100%;
-}
+/*termos*/
+@import './termos/termos.css';
 
-@media (max-width: 800px) {
-	.header-menu {
-		gap: 20px;
-	}
 
-	.header-menu a {
-		background: #111111;
-		padding: 12px 16px;
-		border-radius: 5px;
-	}
-
-	.header-menu li a:after {
-		display: none;
-	}
-
-	.header-menu li a:hover {
-		background: #2e2e2e
-	}
-}
-
-@media (max-width: 600px) {
-	.header-menu {
-		gap: 12px;
-	}
-
-	.header-menu li a {
-		padding: 8px 12px;
-		font-size: 14px
-	}
-}
 
